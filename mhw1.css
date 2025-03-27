@@ -1,0 +1,393 @@
+#menu {
+  display: none;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#menu .lines {
+  width: 25px;
+  height: 3px;
+  background-color: lightgray;
+  margin: 5px;
+}
+
+header {
+  background-color: white;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+
+nav {
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+}
+
+.logo {
+  height: 100%;
+  width: auto;
+}
+
+img {
+  height: 80%;
+}
+
+nav div {
+  display: flex;
+  height: 50%;
+  margin: 0px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.border {
+  border-top: 1px solid lightgray;
+}
+
+.stile {
+  color: black;
+  display: inline-block;
+  font-family: V-Inter, sans-serif;
+  color: rgb(83, 83, 83);
+  padding: 10px;
+  cursor: pointer;
+}
+
+#all {
+  display: none;
+}
+
+.hidden {
+  display: block;
+}
+
+#link {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sottomenu {
+  height: auto;
+  width: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: none;
+  position: relative;
+  top: 100%;
+  left: 0;
+  background-color: rgb(240, 240, 240);
+}
+
+.botton:active .sottomenu {
+  display: block;
+}
+
+.botton:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.stilesottomenu {
+  font-family: V-Inter, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: black;
+}
+
+#searchbar {
+  font-family: V-Inter, sans-serif;
+  height: 70%;
+  width: 60%;
+  background-color: rgb(231, 231, 231);
+  border-radius: 10px;
+}
+
+#option {
+  padding: 5px;
+  cursor: pointer;
+  border-right: 1px solid lightgray;
+}
+
+#link1 {
+  font-family: V-Inter, sans-serif;
+  padding: 8px;
+  border: 2px solid rgb(32, 128, 110);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#link2 {
+  font-family: V-Inter, sans-serif;
+  padding: 10px;
+  color: white;
+  background-color: rgb(32, 128, 110);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+#overlay1 {
+  margin-top: 80px;
+  width: 100%;
+  height: 400px;
+  background-image: url('https://www.modaes.com/files/2022/empresas/vinted/vinted-campana-980.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#box_overlay1 {
+  display: none;
+}
+
+#overlay2 {
+  width: 97%;
+  height: 300px;
+  margin: 20px;
+  border-radius: 10px;
+  background-image: url('https://static-assets.vinted.com/homepage/general-mobile-wide.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: top;
+}
+
+
+p {
+  font-family: V-Inter, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  margin: 30px;
+  color: white;
+}
+
+.box {
+  height: 200px;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid lightgray;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 strong {
+  font-family: V-Inter, sans-serif;
+  font-size: 25px;
+}
+
+#button_news {
+  height: 30px;
+  width: 150px;
+  margin: 30px;
+  color: black;
+  font-size: 15px;
+  font-family: V-Inter, sans-serif;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a strong {
+  margin: 20px;
+  font-family: V-Inter, sans-serif;
+  font-size: 30px;
+}
+
+#feed {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.boxfeed {
+  margin: 20px;
+  width: 250px;
+  height: 450px;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+#boximage {
+  height: 400px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.like {
+  height: 30px;
+  width: 55px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 100px;
+  right: 5px;
+  z-index: 5;
+}
+
+.heart {
+  height: 20px;
+  width: 20px;
+  background-image: url("https://images.emojiterra.com/google/noto-emoji/unicode-15.1/bw/512px/1f90d.png");
+  background-size: cover;
+  background-position: center;
+  margin-left: 10px;
+}
+
+.content {
+  font-family: V-Inter, sans-serif;
+  padding: 10px;
+}
+
+#nextpage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: space-around;
+  align-items: space-around;
+}
+
+footer div a em {
+  font-size: 30px;
+}
+
+#container_social1 {
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
+}
+
+#container_social2 {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-top: 30px;
+}
+
+
+@media (max-width: 900px) {
+
+  nav {
+    margin-top: 50px;
+  }
+
+  nav div div.logo {
+    display: none;
+  }
+
+  #link {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  #searchbar {
+    width: 90%;
+  }
+
+  #all {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+}
+
+@media(max-width:600px) {
+
+  #overlay1 {
+    margin-top: 150px;
+    height: 200px;
+  }
+
+  #overlay1 .box {
+    display: none;
+  }
+
+  .box {
+    margin-left: 0px;
+    height: 100px;
+    width: 95%;
+    height: 200px;
+    padding: 10px;
+  }
+
+  #box_overlay1 {
+    display: block;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  #overlay2 {
+    width: 90%;
+  }
+
+  footer #container {
+    font-size: 10px;
+  }
+
+  footer div a em {
+    font-size: 20px;
+  }
+}
